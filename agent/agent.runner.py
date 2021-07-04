@@ -108,7 +108,7 @@ def start_agent():
         create_socket()
         connect()
         make_handshake()
-        s = Session(_agent_id)
+        s = Session(token=_agent_id)
         _agent_db.add(s)
         while _agent_id is not None:
             try:
