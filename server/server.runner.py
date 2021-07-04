@@ -30,7 +30,7 @@ secret = b'YAHHU88il27a&4Na'
 cipher = AES.new(secret, AES.MODE_ECB)
 
 stamp = lambda: time().__str__()[:10]
-EncodeAES = lambda c, s: base64.b64encode(c.encrypt(s))
+EncodeAES = lambda c, s: base64.b64encode(c.encrypt(pad(s, BLOCK_SIZE)))
 DecodeAES = lambda c, e: c.decrypt(base64.b64decode(e)).decode()
 
 _server_db = ServerDataBase()
