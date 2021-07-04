@@ -1,3 +1,5 @@
+import json
+
 from commons import Base
 from sqlalchemy import Column, String, DateTime, ForeignKey, Boolean
 # from sqlalchemy.orm import relationship
@@ -28,13 +30,13 @@ class Session(Base):
         return '<Session %r>' % self.id
 
     def to_json(self):
-        return {
+        return json.dumps({
                 'id': self.id,
                 'timeCreated': self.time_created,
                 'validUntil': self.valid_until,
                 'isActive': self.is_active,
                 'token': self.token
-        }
+        })
 
 
 if __name__ == '__main__':
