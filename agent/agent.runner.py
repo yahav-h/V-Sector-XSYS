@@ -86,7 +86,8 @@ def recv_decrypt(sock: socket.socket, end=ESCAPE_MARK):
         while packet:
             decrypted_data = DecodeAES(cipher, packet)
             data += decrypted_data
-            if data.endswith(end):
+            data = data.encode().replace(b'\x10', b'').decode()
+            if data.endswith(end.decode()):
                 break
             else:
                 data = sock.recv(MAX_BUFFER)
