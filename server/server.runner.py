@@ -88,7 +88,8 @@ def send_encrypt(sock: socket.socket, data, end=ESCAPE_MARK):
             data = data.zfill(exclusive)
         else:
             data = data.zfill(BLOCK_SIZE)
-        encrypted_data = EncodeAES(cipher, data + end)
+        enc_data = data.encode()
+        encrypted_data = EncodeAES(cipher, enc_data + end)
         sock.sendall(encrypted_data)
         log.info(f'[>] Socket sent data {encrypted_data}')
     except (socket.error, Exception) as e:
