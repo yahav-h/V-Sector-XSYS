@@ -3,6 +3,7 @@ import logging
 import base64
 from time import time
 from pprint import pprint
+from Crypto.Util.Padding import pad
 from Crypto.Cipher import AES
 from agent.modules.session import Session
 from commons.agent_db import AgentDataBase
