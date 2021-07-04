@@ -1,0 +1,10 @@
+DEBUG:ServerDB:[+] database schema created
+INFO:ServerApp:[+] TCP Socket Created and allocated at 140703126397856
+INFO:ServerApp:[+] Socket Server bind connections on ('0.0.0.0', 5443)
+INFO:ServerApp:[+] Socket Server listen to 3 connections
+INFO:ServerApp:[+] TCP Server is up and running...
+INFO:ServerApp:[+] Socket Server received connection from ('127.0.0.1', 55979)
+DEBUG:ServerApp:[@] Incoming Connection from ('127.0.0.1', 55979) - cbcb67e6-966a-5336-950f-0e129547f60e
+INFO:ServerApp:[>] Socket sent data b'3eC6DVodEQlj35Q/JmDtlgVCYoiI9PFwO9leSskMg+CO+8Q07sRc5U6wwYv1EFWPQm3+eQTvPLYdZ9QvTrWXfDASnYEt8ZsttSxc6XYLHMk8+kusmsb/o8PNl8YkeQCa'
+INFO:ServerApp:[<] Socket received data b'3eC6DVodEQlj35Q/JmDtlt3gug1aHREJY9+UPyZg7Zbd4LoNWh0RCWPflD8mYO2W3eC6DVodEQlj35Q/JmDtlt3gug1aHREJY9+UPyZg7Zbd4LoNWh0RCWPflD8mYO2W3eC6DVodEQlj35Q/JmDtlt3gug1aHREJY9+UPyZg7Zbd4LoNWh0RCWPflD8mYO2WOrB/iPuGnY7rUB7HcocHSdc6OPpYib5Br1yeJ3g3pB8J8WM18h329bGIsCkBuOhR4qVIV39fqWVM1goKQqMsJX/2UKpZutaJq3hsYqvbepeVust/koJ5KJv//3TI+XqxzWKXYsF9xCGqKzwVNJANPZ2/OevrBKy1suGDjNQzVBap3hm1n04/WxgVK5lyhQFetdJK9Up9DPn3arOuqgkoLHLVzVVSiC+mNbH/grKB3acwEp2BLfGbLbUsXOl2CxzJPPpLrJrG/6PDzZfGJHkAmg=='
+DEBUG:ServerDB:[+] new object <Agent 'c2b45115-3419-52ff-b381-a1325ab04684'> added to database
