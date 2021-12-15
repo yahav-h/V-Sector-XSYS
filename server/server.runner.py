@@ -31,7 +31,7 @@ cipher = AES.new(secret, AES.MODE_ECB)
 
 stamp = lambda: time().__str__()[:10]
 EncodeAES = lambda c, s: base64.b64encode(c.encrypt(pad(s, BLOCK_SIZE)))
-DecodeAES = lambda c, e: c.decrypt(base64.b64decode(e)).decode()
+DecodeAES = lambda c, e: unpad(c.decrypt(base64.b64decode(e)), BLOCK_SIZE)
 
 _server_db = ServerDataBase()
 
